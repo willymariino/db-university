@@ -1,2 +1,2 @@
 # esercizio db university
-(./image_720.png)
+![diagramma studenti universita](db.university.jpg)
