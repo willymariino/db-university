@@ -36,3 +36,6 @@ WHERE name Like "%Magistrale%"
 
 
  # Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
+
+ SELECT * FROM `db-university`.teachers
+WHERE phone IS NULL 
