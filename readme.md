@@ -16,6 +16,11 @@ WHERE year(date_of_birth) < 1995;
 
  # Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso dilaurea (286)
 
+SELECT * FROM `db-university`.courses
+WHERE `PERIOD` = 'I semestre'
+AND `year` = 1
+
+
 
  # Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del20/06/202(21)
 
