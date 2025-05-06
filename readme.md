@@ -34,6 +34,8 @@ WHERE name Like "%Magistrale%"
 
  # Da quanti dipartimenti è composta l'università? (12)
 
+SELECT COUNT(*) AS 'totale_dipartimenti'
+ FROM `db-university`.departments;
 
  # Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
