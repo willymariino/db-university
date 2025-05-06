@@ -24,6 +24,8 @@ AND `year` = 1
 
  # Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del20/06/202(21)
 
+SELECT * FROM `db-university`.exams
+Where `date` = '2020-06-20' AND `hour` > '14:00:00'
 
  # Selezionare tutti i corsi di laurea magistrale (38)
 
