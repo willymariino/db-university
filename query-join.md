@@ -16,7 +16,7 @@ AND departments.name = "neuroscienze";
 non funziona
 
 # Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
-SELECT * FROM `db-university`.course_teacher
+SELECT courses.* FROM `db-university`.course_teacher
 INNER JOIN courses
 ON courses.id = course_teacher.course_id
 WHERE teacher_id = 44
