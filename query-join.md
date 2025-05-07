@@ -33,8 +33,6 @@ ON departments.id = degrees.department_id
 ORDER BY students.name, students.surname ASC
 
  # Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
-
- # Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
 USE `db-university`;
 SELECT
  degrees.name AS corso_di_laurea, 
@@ -50,4 +48,7 @@ ON teachers.id = course_teacher.teacher_id
 
  # Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54)
 
- # BONUS: Selezionare per ogni studente il numero di tentativi sostenutiper ogni esame, stampando anche il voto massimo. Successivamente, filtrare i tentativi con voto minimo 18
+
+
+
+ # BONUS: Selezionare per ogni studente il numero di tentativi sostenuti per ogni esame, stampando anche il voto massimo. Successivamente, filtrare i tentativi con voto minimo 18
