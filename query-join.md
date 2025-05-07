@@ -36,14 +36,15 @@ ORDER BY students.name, students.surname ASC
 
  # Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
 USE `db-university`;
-SELECT degrees.name AS corso_di_laurea, 
+SELECT
+ degrees.name AS corso_di_laurea, 
 courses.name AS corso,
 teachers.name AS insegnante
 FROM degrees
 INNER JOIN courses
 ON degrees.id = courses.degree_id
 INNER JOIN course_teacher
-ON course.id = course_teacher.course_id
+ON courses.id = course_teacher.course_id
 INNER JOIN teachers
 ON teachers.id = course_teacher.teacher_id
 
