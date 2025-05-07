@@ -30,7 +30,7 @@ INNER JOIN `db-university`.degrees
 ON degrees.id = students.degree_id
 INNER JOIN `db-university`.departments
 ON departments.id = degrees.department_id
-
+ORDER BY students.name, students.surname ASC
 
  # Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
 
