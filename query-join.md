@@ -42,6 +42,8 @@ teachers.name AS insegnante
 FROM degrees
 INNER JOIN courses
 ON degrees.id = courses.degree_id
+INNER JOIN course_teacher
+ON course.id = course_teacher.course_id
 INNER JOIN teachers
 ON teachers.id = course_teacher.teacher_id
 
