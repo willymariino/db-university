@@ -11,9 +11,8 @@ WHERE degrees.name = "corso di laurea in economia"
 INNER JOIN departments
  ON departments.id = degrees.department_id
 WHERE degrees.level = "magistrale"
-AND departments.name = "neuroscienze";
+AND departments.name = "dipartimento_di_neuroscienze";
 
-non funziona
 
 # Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
 SELECT courses.* FROM `db-university`.course_teacher
